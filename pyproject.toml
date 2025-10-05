@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manifest-wizard"
+version = "0.1.0"
+description = "Generate forensic/pentest artifact manifests; zip, encrypt (OpenSSL), and sign (GPG) with a polished TUI."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Antonio", email = "dangeloantonio179@gmail.com" }]
+keywords = ["forensics", "pentest", "artifacts", "manifest", "hash", "encryption", "gpg", "openssl"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Environment :: Console",
+  "Topic :: Security",
+  "Topic :: System :: Archiving"
+]
+
+dependencies = [
+  "rich>=13.7.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/well-it-wasnt-me/manifest-wizard"
+Issues = "https://github.com/well-it-wasnt-me/manifest-wizard/issues"
+
+[project.scripts]
+manifest-wizard = "manifest_wizard.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
