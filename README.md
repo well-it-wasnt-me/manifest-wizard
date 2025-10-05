@@ -1,4 +1,7 @@
 # Manifest Wizard (yes, it actually works)
+
+![Static Badge](https://app.readthedocs.org/projects/manifest-wizard/badge/?version=latest)
+
 You drop a bunch of forensic/pentest artifacts in a pile and Manifest Wizard turns them into neat little 
 manifests (JSON + CSV), computes hashes, zips everything up, can encrypt it with OpenSSL if you’re paranoid, and sign it 
 with GPG if you want to pretend you did it all properly.
@@ -82,6 +85,9 @@ Run the tests. If they fail, blame the CI pipeline and then fix your code.
 
 # Contributing
 Open a PR, file an issue, or send a strongly worded email. Contributions welcome. Be kind, or at least be funny about it.
+
+But BEFORE, PLEASE: [RTFM](https://manifest-wizard.readthedocs.io/en/latest/)
+
 
 # Final thoughts (advice you didn’t ask for)
 

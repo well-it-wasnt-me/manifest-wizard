@@ -1,12 +1,12 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=75.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "manifest-wizard"
-version = "0.1.0"
+name = "manifest_wizard_well_it_wasnt_me"
+version = "1.0.0"
 description = "Generate forensic/pentest artifact manifests; zip, encrypt (OpenSSL), and sign (GPG) with a polished TUI."
-readme = "README.md"
+readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.8"
 license = { text = "MIT" }
 authors = [{ name = "Antonio", email = "dangeloantonio179@gmail.com" }]
@@ -30,6 +30,9 @@ Issues = "https://github.com/well-it-wasnt-me/manifest-wizard/issues"
 
 [project.scripts]
 manifest-wizard = "manifest_wizard.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
